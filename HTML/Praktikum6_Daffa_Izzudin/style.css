@@ -1,0 +1,14 @@
+header {
+    padding: 20px;
+    text-align: center;
+ }
+ 
+ header img {
+    height: 50px;
+ }
+ 
+ header nav ul li {
+    display: inline;
+    margin: 0 10px;
+ }
+ 

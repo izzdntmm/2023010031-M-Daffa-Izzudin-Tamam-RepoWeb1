@@ -7,16 +7,17 @@
 </head>
 <body>
     <h1>Form Registrasi</h1>
-    <form>
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
         <label for="nama">Nama :</label>
         <input type="text" id="nama" name="nama"><br><br>
-
-        <label for="gender">Gender :</label>
-        <input type="radio" id="gender" name="gender">
-        <label for="laki">Laki-Laki</label>
-        <input type="radio" id="Perempuan" name="perempuan">
-        <label for="perempuan">Perempuan</label><br><br>
-
+        
+        <label for="jenis-kelamin">Jenis Kelamin :</label>
+        <input type="radio" id="laki-laki" name="fav_language" value="laki-laki">
+        <label for="laki-laki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="fav_language" value="perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+        
+        
         <label for="alamat">Alamat :</label>
         <input type="text" id="alamat" name="alamat"><br><br>
 
@@ -38,6 +39,7 @@
         <textarea type="komentar" id="komentar" rows="4" cols="50"></textarea>
 
         <input type="submit">
+        
     </form>
     
 </body>
