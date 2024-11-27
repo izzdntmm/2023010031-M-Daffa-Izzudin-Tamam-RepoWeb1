@@ -11,7 +11,7 @@
     <div class="container">
         <!-- Header -->
         <header>
-            <h1>Selamat Datang</h1>
+            <h1>Profile</h1>
             <img src="" alt="">
         </header>
         <!-- Header -->
@@ -21,34 +21,65 @@
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="">Konten</a></li>
-                <li><a href="">Picture</a></li>
-                <li style="float: right;"><a href="">Login</a></li>
+                <li><a href="konten.html">Minat Saya</a></li>
+                <li><a href="socialmedia.html">Social Media</a></li>
+                <li style="float: right;"  ><a id="login-btn" class="login" href="">Login</a></li>
             </ul>
         </nav>
         <!-- Navigasi -->
 
         <!-- Main -->
-        <div id="Profile">
+        <div id="profile">
+            <img src="Assets/img/aku.JPG" class="foto-profile" height="150px" alt="">
             <h2>Profile</h2>
             <p>Nama : Muhammad Daffa Izzudin Tamam</p>
             <p>NIM : 2023010031</p>
             <p>Alamat : Gembong, Pati</p>
-            <p>Profesi : Mahasiswa</p>
+            <p>Status : Mahasiswa</p>
             <p>Tentang Saya : Saya adalah mahasiswa semester 3 di Politeknik Balekambang, yang ambil program studi Rekayasa Perangkat Lunak</p>
         </div>
         <!-- Main -->
 
+        <!-- login -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+              <span class="close-btn">&times;</span>
+              <h2>Login</h2>
+              <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+              </form>
+        
+              <hr>
+        
+              <h2>Register</h2>
+              <form id="register-form">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="username" required>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit">Register</button>
+              </form>
+            </div>
+          </div>
+        <!-- login -->
+
         <!-- Footer -->
         <footer>
             <p>
-                <img src="Assets/img/rpl b logo.png" alt="">
-                <br>
+                <img src="Assets/img/logo-polibang.png" height="65px" alt="">
                 &copy; 2023010031 | Muhammad Daffa Izzudin Tamam
             </p>
         </footer>
         <!-- Footer -->
     </div>
+
+    <script src="Assets/js/script.js"></script>
     
 </body>
 </html>

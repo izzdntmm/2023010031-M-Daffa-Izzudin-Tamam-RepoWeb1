@@ -13,9 +13,16 @@ body {
 
 /* Header */
 header {
-    background-color: #f4f4f4;
+    background-color: #038b5a;
+    color: #fff;
     text-align: center;
     padding: 20px;
+}
+
+header h1 {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navigasi */
@@ -41,8 +48,13 @@ header {
     background-color: #555;
 }
   
-  .active {
+.active {
     background-color: #04AA6D;
+    cursor: pointer;
+}
+
+.login {
+    background-color: #037148;
 }
 
 /* Main */
@@ -51,6 +63,30 @@ header {
     background-color: #f4f4f4;
     width: 970px;
     height: 500px;
+}
+
+/* Profile */
+#profile {
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  height: 500px;
+}
+
+.foto-profile {
+  padding: 20px;
+}
+
+/* sosmed */
+#sosmed {
+  height: 500px;
+}
+
+#sosmed img {
+    width: 200px;
+    padding: 20px;
+    justify-items: center;
 }
 
 /* Footer */
@@ -62,6 +98,72 @@ footer {
 }
 
 footer img {
-    max-height: 50px;
+    max-height: 100px;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
+
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* login */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .popup-content h2 {
+    margin-top: 0;
+  }
+  
+  .popup-content label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .popup-content input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .popup-content button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
