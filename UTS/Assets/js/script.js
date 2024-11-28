@@ -1,19 +1,19 @@
- // Select elements
+ // Pemilihan Elemen
  const loginBtn = document.getElementById('login-btn');
  const popup = document.getElementById('popup');
  const closeBtn = document.querySelector('.close-btn');
 
- // Show the pop-up when "Login" button is clicked
+ // Menampilkan Pop-up saat Tombol "Login" Diklik
  loginBtn.addEventListener('click', () => {
  popup.style.display = 'flex';
  });
 
- // Close the pop-up when the close button is clicked
+ // Ketika tombol "Login" diklik, event listener mendeteksi kejadian click dan menjalankan fungsi.
  closeBtn.addEventListener('click', () => {
  popup.style.display = 'none';
  });
 
- // Close the pop-up when clicking outside the content area
+ // Menutup Pop-up saat Mengklik di Luar Area Konten
  window.addEventListener('click', (e) => {
  if (e.target === popup) {
      popup.style.display = 'none';
